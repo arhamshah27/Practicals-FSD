@@ -1,0 +1,71 @@
+/* Row scroll buttons */
+.row-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 5;
+  width: 45px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.row-btn:hover {
+  background: rgba(0,0,0,0.85);
+  transform: scale(1.05) translateY(-50%);
+}
+
+.row-btn.left {
+  left: 0;
+}
+
+.row-btn.right {
+  right: 0;
+}
+/* 1) reset browser spacing so no white edges show */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #081018; /* the dark app background */
+  color: #fff;
+}
+
+/* 2) ensure the main app wrapper fills the page */
+#root > div {
+  min-height: 100vh;
+  background: inherit;
+}
+
+/* 3) optional: remove default outline/border from nav or images that may show white */
+nav, header, main, footer {
+  border: none;
+  box-shadow: none;
+}
+
+/* 4) make sure images don't show white background */
+img {
+  background: transparent;
+  display: inline-block;
+}
+
+/* 5) keep scrollbars outside content (optional) */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 6) if you added a white border accidentally elsewhere, this is a quick helper you can remove later */
+.no-border {
+  border: none !important;
+  box-shadow: none !important;
+}
