@@ -1,0 +1,139 @@
+/* === Google Fonts Import === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* === CSS Variables for easy theme management === */
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-text-color: #e0e0e0;
+    --secondary-text-color: #a0a0a0;
+    --primary-accent-color: #007BFF;
+    --primary-accent-hover: #0056b3;
+    --border-color: #333;
+    --input-bg-color: #2c2c2c;
+    --error-color: #ff4d4d;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* === General Body & Typography === */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* === Main Container Styling === */
+.container {
+    background: white;
+    max-width: 400px;
+    margin: auto;
+    background-color: var(--surface-color);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* === Form Elements Styling === */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: var(--input-bg-color);
+    color: var(--primary-text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-accent-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #007BFF;
+    background-color: var(--primary-accent-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-accent-hover);
+}
+
+/* === Utility & Result Page Styling === */
+.error {
+    color: red;
+    margin-bottom: 10px;
+    color: var(--error-color);
+    background-color: rgba(255, 77, 77, 0.1);
+    border: 1px solid var(--error-color);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--primary-accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}

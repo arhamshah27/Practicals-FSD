@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Poll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="v1">
+    <h1 class="tt1">Vote Your Favourite programming language </h1>
+    <button class="b1" onclick="vote('javascript')">JavaScript</button>
+    <br>
+    
+    <button class="b1" onclick="vote('python')">Python</button>
+    <br> 
+    <button class="b1" onclick="vote('java')">Java</button>
+    <br>
+    <div class="results">
+        <div class="result-item">JavaScript: <span id="js-votes">0</span></div>
+        <div class="result-item">Python: <span id="py-votes">0</span></div>
+        <div class="result-item">Java: <span id="java-votes">0</span></div>
+    </div>
+    </div>
+    <script src="script.js">
+</script>
+</body>
+</html>

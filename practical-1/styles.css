@@ -1,0 +1,36 @@
+        .b1{
+            width: 160px;
+            height: 48px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #ea394a; 
+            color: white;
+            border-radius: 15px;
+        }
+        .results {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .result-item {
+            margin: 8px 0;
+        }
+        .v1 {
+            border: 2px solid #de3c3c;
+            text-align: center;
+            margin-top: 50px;
+            border: 2px solid red;
+            width: 400px;
+            margin: 32px auto;
+            padding: 24px 32px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .tt1{
+            font-size: xx-large;
+            font-family: cursive;
+            font-weight: bold;
+            
+        }
